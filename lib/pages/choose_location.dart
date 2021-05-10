@@ -7,33 +7,6 @@ class ChooseLocation extends StatefulWidget {
 
 class _ChooseLocationState extends State<ChooseLocation> {
 
-
-  void getData() async{
-    //Simulating a network call
-    String Name = await Future.delayed(Duration(seconds: 3),(){
-      return 'Divyam';
-    });
-
-    //Simulating a network call
-    String Does = await Future.delayed(Duration(seconds: 2),(){
-      return 'Eat, Sleep, Youtube, Repeat';
-    });
-
-    print('$Name - $Does');
-
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    // InitSate is used to get data from the third party api
-    print('InitState called before getData');
-
-    getData();
-
-    print('Statement after getData');
-  }
-
   int count = 0;
 
   @override
