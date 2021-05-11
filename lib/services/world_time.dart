@@ -39,7 +39,7 @@ print('minute offset is $utc_offset_minutes');
     now = now.add(Duration(minutes: int.parse(utc_offset_minutes)));
     print('now is $now');
 
-    isDaytime = now.hour>6 && now.hour<20 ? true : false;
+    isDaytime = now.hour>6 && now.hour<18 ? true : false;
 
     //setting the time property
     time = DateFormat.jm().format(now);
